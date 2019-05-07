@@ -3,7 +3,7 @@ def run_guessing_game
   guess = gets.downcase.chomp
   random = rand(1..6).to_s
   
-  if guess == 'exit' 
+  if guess.downcase == 'exit' 
     puts 'Goodbye!'
   end
   
