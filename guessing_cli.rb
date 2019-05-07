@@ -4,12 +4,12 @@ def run_guessing_game
   random = rand(1..6)
   
   while guess
-    if guess.to_i == random
+    if guess.downcase == 'exit'
+      break
+    elsif guess.to_i == random
       puts "You guessed the correct number!"
-      run_guessing_game
     else 
       puts "The computer guessed #{random}."
-      run_guessing_game
     break
     end
   end
