@@ -9,6 +9,7 @@ def run_guessing_game
       return
     else 
       puts "The computer guessed #{random}."
+      return
     end
   end
   puts "Goodbye!"
