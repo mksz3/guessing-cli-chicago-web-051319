@@ -6,10 +6,8 @@ def run_guessing_game
   while guess.downcase != 'exit' do
     if guess.to_i == random
       puts "You guessed the correct number!"
-      return
     else 
       puts "The computer guessed #{random}."
-      return
     end
   end
   puts "Goodbye!"
