@@ -10,7 +10,7 @@ def run_guessing_game
     else 
       puts "The computer guessed #{random}."
       run_guessing_game
-    break if guess.downcase == 'exit'
+    break
     end
   end
     puts "Goodbye!"
