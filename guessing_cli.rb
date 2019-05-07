@@ -3,12 +3,13 @@ def run_guessing_game
   guess = gets.downcase.chomp
   random = rand(1..6).to_s
   
-  while guess != 'exit'
-    if guess == random
+  while guess
+    if guess == 'exit'
+      puts "Goodbye!"
+    elsif guess == random
       puts "You guessed the correct number!"
     else 
       puts "The computer guessed #{random}."
     end
   end
-  puts "Goodbye!"
 end
