@@ -7,6 +7,8 @@ def run_guessing_game
     if guess.to_i == random
       puts "You guessed the correct number!"
       run_guessing_game
+    elsif guess.downcase == "exit"
+      break
     else
       puts "The computer guessed #{random}."
       run_guessing_game
