@@ -5,7 +5,8 @@ def run_guessing_game
   
   while guess
     if guess.downcase == 'exit'
-      break
+      puts "Goodbye!"
+      return
     elsif guess.to_i == random
       puts "You guessed the correct number!"
     else 
@@ -13,5 +14,4 @@ def run_guessing_game
     break
     end
   end
-    puts "Goodbye!"
 end
