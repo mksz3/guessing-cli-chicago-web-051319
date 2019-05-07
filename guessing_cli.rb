@@ -3,7 +3,7 @@ def run_guessing_game
   guess = gets.chomp
   random = rand(1..6)
   
-  while guess.downcase != 'exit'
+  while guess
     if guess.to_i == random
       puts "You guessed the correct number!"
       run_guessing_game
