@@ -3,7 +3,7 @@ def run_guessing_game
   guess = gets.downcase.chomp
   random = rand(1..6).to_s
   
-  until guess  == 'exit'
+  while guess != 'exit'
     if guess == random
       puts "You guessed the correct number!"
     else 
