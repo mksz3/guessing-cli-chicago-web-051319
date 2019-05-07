@@ -6,5 +6,5 @@ def run_guessing_game
   
   while guess.downcase != 'exit'
     if guess == random
-      puts ""
+      puts "You guessed the correct number!"
 end
