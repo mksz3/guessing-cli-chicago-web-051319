@@ -6,8 +6,10 @@ def run_guessing_game
     random = rand(1..6)
     if guess.to_i == random
       puts "You guessed the correct number!"
+      guess = gets.chomp
     else 
       puts "The computer guessed #{random}."
+      guess = gets.chomp
     end
   end
   puts "Goodbye!"
